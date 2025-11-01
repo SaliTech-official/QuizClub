@@ -10,6 +10,7 @@ function App() {
   const [questions, setQuestions] = useState<QuestionState[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
+  const [userAnswer, setUserAnswer] = useState<string | undefined>(undefined);
 
   const startQuiz = () => {
     const preparedQuestions = quizQuestions.map(
@@ -23,22 +24,31 @@ function App() {
     setIsQuizActive(true)
     setScore(0)
     setCurrentQuestionIndex(0)
+    setUserAnswer(undefined)
   }
 
-  const checkAnswer = (answer : string) => {
-    const isCorrect = questions[currentQuestionIndex].correct_answer === answer
-    if (isCorrect){
-      setScore(prevScore => prevScore + 1)
-    }
-    
-    const nextQuestionIndex = currentQuestionIndex + 1
-    if (nextQuestionIndex < questions.length) {
-      setCurrentQuestionIndex(nextQuestionIndex)
-    } else {
-      alert(`Quiz Finished! Your final score is: ${isCorrect ? score + 1 : score}/${questions.length}`)
-      setIsQuizActive(false)
-    }
-  }
+  const checkAnswer = (answer: string) => {
+      if (userAnswer) return;
+
+      const isCorrect = questions[currentQuestionIndex].correct_answer === answer;
+      if (isCorrect) {
+        setScore(prevScore => prevScore + 1);
+      }
+
+      setUserAnswer(answer);
+    };
+
+  const nextQuestion = () => {
+      const nextQuestionIndex = currentQuestionIndex + 1;
+
+      if (nextQuestionIndex === questions.length) {
+        alert(`Quiz Finished! Your final score is: ${score}/${questions.length}`);
+        setIsQuizActive(false);
+      } else {
+        setCurrentQuestionIndex(nextQuestionIndex);
+        setUserAnswer(undefined);
+      }
+    };
 
 
   return (
@@ -57,7 +67,17 @@ function App() {
           <QuestionCard 
             question={questions[currentQuestionIndex]}
             checkAnswer={checkAnswer}
+            userAnswer={userAnswer}
           />
+
+          {userAnswer && (
+            <button
+              onClick={nextQuestion}
+              className="mt-8 bg-gray-700 text-white font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition-transform transform hover:scale-105"
+            >
+              Next Question
+            </button>
+          )}
         </>
       )}
       
