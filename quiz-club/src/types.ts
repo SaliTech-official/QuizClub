@@ -1,5 +1,5 @@
-type Difficulties = "hard" | "medium" | "easy";
-type Category = "sports" | "history" | "computer_science" | "math"
+export type Difficulties = "hard" | "medium" | "easy";
+export type Category = "sports" | "history" | "computer_science" | "math"
 
 export interface Question {
   question: string;
