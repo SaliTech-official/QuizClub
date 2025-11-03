@@ -10,6 +10,7 @@ type Props = {
   checkAnswer: (answer: string) => void;
   userAnswer: string | undefined;
   nextQuestion: () => void;
+  timeLeft: number
 };
 
 const QuizScreen: React.FC<Props> = ({ 
@@ -19,8 +20,10 @@ const QuizScreen: React.FC<Props> = ({
   question, 
   checkAnswer, 
   userAnswer, 
-  nextQuestion 
+  nextQuestion,
+  timeLeft
 }) => {
+    const timeColor = timeLeft <= 5 ? "text-red-500" : "text-gray-800" ;
   return (
     <div className="w-full animate-fade-in">
       <div className="flex justify-between items-center mb-4">
@@ -29,6 +32,13 @@ const QuizScreen: React.FC<Props> = ({
           Question: {questionNumber} / {totalQuestions}
         </p>
       </div>
+
+      <div className="text-center my-4">
+        <p className={`text-3xl font-bold ${timeColor} transition-colors`}>
+          Time Left: {timeLeft}
+        </p>
+      </div>
+      
       
       <QuestionCard 
         question={question}

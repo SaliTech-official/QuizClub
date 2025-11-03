@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+// src/App.tsx
+
+import React, { useState, useEffect } from 'react';
 import { quizQuestions } from './data';
 import SetupScreen from './components/SetupScreen';
 import QuizScreen from './components/QuizScreen';
@@ -9,6 +11,8 @@ type GameState = 'not_started' | 'playing' | 'finished';
 
 const shuffleArray = (array: string[]) => [...array].sort(() => Math.random() - 0.5);
 
+const QUESTION_TIME_LIMIT = 20;
+
 function App() {
   const [gameState, setGameState] = useState<GameState>('not_started');
   const [selectedCategory, setSelectedCategory] = useState<Category>('sports');
@@ -18,6 +22,30 @@ function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [userAnswer, setUserAnswer] = useState<string | undefined>(undefined);
+  const [timeLeft, setTimeLeft] = useState(QUESTION_TIME_LIMIT);
+
+  useEffect(() => {
+    if (gameState !== 'playing' || userAnswer) {
+      return;
+    }
+
+    const timer = setInterval(() => {
+      setTimeLeft(prevTime => {
+        if (prevTime <= 1) {
+          clearInterval(timer);
+          checkAnswer("");    
+          return 0;           
+        }
+        return prevTime - 1;
+      });
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+    
+  }, [gameState, userAnswer, currentQuestionIndex]);
+
 
   const startQuiz = () => {
     const filteredQuestions = quizQuestions.filter(
@@ -39,12 +67,15 @@ function App() {
     setScore(0);
     setCurrentQuestionIndex(0);
     setUserAnswer(undefined);
+    setTimeLeft(QUESTION_TIME_LIMIT); 
   };
 
   const checkAnswer = (answer: string) => {
-    if (userAnswer) return; // Do nothing if an answer has already been submitted
-    const isCorrect = questions[currentQuestionIndex].correct_answer === answer;
-    if (isCorrect) setScore(prevScore => prevScore + 1);
+    if (userAnswer) return; 
+    const isCorrect = questions[currentQuestionIndex]?.correct_answer === answer;
+    if (isCorrect) {
+      setScore(prevScore => prevScore + 1);
+    }
     setUserAnswer(answer);
   };
 
@@ -55,6 +86,7 @@ function App() {
     } else {
       setCurrentQuestionIndex(nextQuestionIndex);
       setUserAnswer(undefined);
+      setTimeLeft(QUESTION_TIME_LIMIT); 
     }
   };
 
@@ -82,6 +114,7 @@ function App() {
             checkAnswer={checkAnswer}
             userAnswer={userAnswer}
             nextQuestion={nextQuestion}
+            timeLeft={timeLeft}
           />
         )}
 
