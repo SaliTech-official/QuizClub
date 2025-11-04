@@ -11,7 +11,7 @@ type GameState = 'not_started' | 'playing' | 'finished';
 
 const shuffleArray = (array: string[]) => [...array].sort(() => Math.random() - 0.5);
 
-const QUESTION_TIME_LIMIT = 20;
+const QUESTION_TIME_LIMIT = 50;
 
 function App() {
   const [gameState, setGameState] = useState<GameState>('not_started');
@@ -115,6 +115,7 @@ function App() {
             userAnswer={userAnswer}
             nextQuestion={nextQuestion}
             timeLeft={timeLeft}
+            totalTime={QUESTION_TIME_LIMIT}
           />
         )}
 

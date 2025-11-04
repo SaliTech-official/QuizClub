@@ -1,5 +1,6 @@
 import React from 'react';
 import QuestionCard from './QuestionCard';
+import TimerBar from './TimerBar';
 import type { QuestionState } from '../types';
 
 type Props = {
@@ -10,7 +11,8 @@ type Props = {
   checkAnswer: (answer: string) => void;
   userAnswer: string | undefined;
   nextQuestion: () => void;
-  timeLeft: number
+  timeLeft: number;
+  totalTime: number;
 };
 
 const QuizScreen: React.FC<Props> = ({ 
@@ -21,7 +23,8 @@ const QuizScreen: React.FC<Props> = ({
   checkAnswer, 
   userAnswer, 
   nextQuestion,
-  timeLeft
+  timeLeft,
+  totalTime
 }) => {
     const timeColor = timeLeft <= 5 ? "text-red-500" : "text-gray-800" ;
   return (
@@ -33,11 +36,7 @@ const QuizScreen: React.FC<Props> = ({
         </p>
       </div>
 
-      <div className="text-center my-4">
-        <p className={`text-3xl font-bold ${timeColor} transition-colors`}>
-          Time Left: {timeLeft}
-        </p>
-      </div>
+      <TimerBar timeLeft={timeLeft} totalTime={totalTime}/>
       
       
       <QuestionCard 
