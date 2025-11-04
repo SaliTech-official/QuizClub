@@ -1,5 +1,3 @@
-// src/App.tsx
-
 import React, { useState, useEffect } from 'react';
 import { quizQuestions } from './data';
 import SetupScreen from './components/SetupScreen';
@@ -11,7 +9,8 @@ type GameState = 'not_started' | 'playing' | 'finished';
 
 const shuffleArray = (array: string[]) => [...array].sort(() => Math.random() - 0.5);
 
-const QUESTION_TIME_LIMIT = 50;
+const QUESTION_TIME_LIMIT = 50; 
+const AUTO_NEXT_QUESTION_DELAY = 2000; 
 
 function App() {
   const [gameState, setGameState] = useState<GameState>('not_started');
@@ -33,8 +32,8 @@ function App() {
       setTimeLeft(prevTime => {
         if (prevTime <= 1) {
           clearInterval(timer);
-          checkAnswer("");    
-          return 0;           
+          handleTimeUp(); 
+          return 0;
         }
         return prevTime - 1;
       });
@@ -45,6 +44,15 @@ function App() {
     };
     
   }, [gameState, userAnswer, currentQuestionIndex]);
+
+
+  const handleTimeUp = () => {
+    checkAnswer(""); 
+
+    setTimeout(() => {
+      nextQuestion();
+    }, AUTO_NEXT_QUESTION_DELAY);
+  };
 
 
   const startQuiz = () => {
