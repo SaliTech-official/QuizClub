@@ -31,6 +31,7 @@ const SetupScreen: React.FC<Props> = ({
           <option value="sports">Sports</option>
           <option value="history">History</option>
           <option value="computer_science">Computer Science</option>
+          <option value="mathematics">Mathematics</option>
         </select>
       </div>
 
