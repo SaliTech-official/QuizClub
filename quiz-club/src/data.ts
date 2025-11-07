@@ -210,5 +210,76 @@ export const quizQuestions: Question[] = [
         incorrect_answers: ["The number of bits a CPU can process at once", "The method for error correction in RAM", "The physical layout of transistors on a chip"],
         difficulty: "hard",
         category: "computer_science"
-    }
+    },
+    {
+        question: "What is 15 + 27?",
+        correct_answer: "42",
+        incorrect_answers: ["32", "41", "52"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    {
+        question: "How many sides does a hexagon have?",
+        correct_answer: "6",
+        incorrect_answers: ["5", "7", "8"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    {
+        question: "What is 8 multiplied by 7?",
+        correct_answer: "56",
+        incorrect_answers: ["48", "64", "54"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    {
+        question: "If x - 5 = 10, what is the value of x?",
+        correct_answer: "15",
+        incorrect_answers: ["5", "-5", "10"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    {
+        question: "What is the area of a square with a side length of 4 units?",
+        correct_answer: "16",
+        incorrect_answers: ["8", "12", "20"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    {
+        question: "Which of the following is a prime number?",
+        correct_answer: "11",
+        incorrect_answers: ["9", "15", "12"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    {
+        question: "What is 100 minus 43?",
+        correct_answer: "57",
+        incorrect_answers: ["67", "53", "63"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    {
+        question: "What is 50% of 200?",
+        correct_answer: "100",
+        incorrect_answers: ["50", "25", "150"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    {
+        question: "How many degrees are in a right angle?",
+        correct_answer: "90",
+        incorrect_answers: ["45", "180", "360"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    {
+        question: "What is 64 divided by 8?",
+        correct_answer: "8",
+        incorrect_answers: ["6", "7", "9"],
+        difficulty: "easy",
+        category: "mathematics"
+    },
+    
 ]
