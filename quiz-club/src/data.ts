@@ -561,5 +561,75 @@ export const quizQuestions: Question[] = [
         difficulty: "medium",
         category: "history"
     },
+    {
+        question: "The Treaty of Tordesillas (1494) divided newly discovered lands between which two countries?",
+        correct_answer: "Spain and Portugal",
+        incorrect_answers: ["England and France", "Netherlands and Spain", "Portugal and England"],
+        difficulty: "hard",
+        category: "history"
+    },
+    {
+        question: "The series of conflicts between Rome and Carthage are known by what name?",
+        correct_answer: "The Punic Wars",
+        incorrect_answers: ["The Peloponnesian Wars", "The Gallic Wars", "The Samnite Wars"],
+        difficulty: "hard",
+        category: "history"
+    },
+    {
+        question: "What was the name of the political doctrine used to justify the westward expansion of the United States?",
+        correct_answer: "Manifest Destiny",
+        incorrect_answers: ["The Monroe Doctrine", "Populism", "Isolationism"],
+        difficulty: "hard",
+        category: "history"
+    },
+    {
+        question: "The Meiji Restoration period led to the modernization of which country?",
+        correct_answer: "Japan",
+        incorrect_answers: ["China", "Korea", "Vietnam"],
+        difficulty: "hard",
+        category: "history"
+    },
+    {
+        question: "The War of the Roses was a series of civil wars fought for control of the throne of which country?",
+        correct_answer: "England",
+        incorrect_answers: ["France", "The Holy Roman Empire", "Spain"],
+        difficulty: "hard",
+        category: "history"
+    },
+    {
+        question: "Who was the last emperor of the Aztec Empire before its fall to the Spanish?",
+        correct_answer: "Moctezuma II",
+        incorrect_answers: ["Pachacuti", "Atahualpa", "Huayna Capac"],
+        difficulty: "hard",
+        category: "history"
+    },
+    {
+        question: "The Khmer Rouge regime was responsible for a genocide in which modern-day country?",
+        correct_answer: "Cambodia",
+        incorrect_answers: ["Vietnam", "Laos", "Thailand"],
+        difficulty: "hard",
+        category: "history"
+    },
+    {
+        question: "What was the name of the 19th-century trade conflict between Great Britain and China?",
+        correct_answer: "The Opium Wars",
+        incorrect_answers: ["The Spice Wars", "The Boxer Rebellion", "The Taiping Rebellion"],
+        difficulty: "hard",
+        category: "history"
+    },
+    {
+        question: "The Battle of Thermopylae was fought between an alliance of Greek city-states and which empire?",
+        correct_answer: "The Persian Empire",
+        incorrect_answers: ["The Roman Empire", "The Ottoman Empire", "The Macedonian Empire"],
+        difficulty: "hard",
+        category: "history"
+    },
+    {
+        question: "What was the name of the German republic that existed between World War I and the rise of Nazi Germany?",
+        correct_answer: "The Weimar Republic",
+        incorrect_answers: ["The Prussian Republic", "The Federal Republic of Germany", "The German Confederation"],
+        difficulty: "hard",
+        category: "history"
+    },
     
 ]
