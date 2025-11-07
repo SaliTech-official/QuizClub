@@ -46,9 +46,9 @@ The application uses React's built-in Hooks (`useState` and `useEffect`) for man
 
 ![Quiz Club Question Screen](/Previews/Preview2.png)
 
-![Quiz Club Answer Feedback](/Previews/Preview3.png)
+![Quiz Club Answer Feedback](/Previews/Preview4.png)
 
-![Quiz Club Results Screen](/Previews/Preview4.png)
+![Quiz Club Results Screen](/Previews/Preview3.png)
 
 ## Future Updates
 
