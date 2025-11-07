@@ -53,4 +53,3 @@ Complex Side Effect Management: The useEffect hook is expertly used to manage th
 Clean Componentization: The UI is broken down into single-responsibility components (SetupScreen, QuizScreen, ResultScreen), promoting code reusability, scalability, and maintainability.
 Modern Development Workflow: The project is built using Vite, providing a blazing-fast development server and an optimized production build.
 Utility-First Styling: The entire UI is built with Tailwind CSS, demonstrating a modern and efficient approach to styling without the need for traditional CSS files.
-Feel free to explore the code, contribute, or report any issues!
