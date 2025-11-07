@@ -771,6 +771,75 @@ export const quizQuestions: Question[] = [
         difficulty: "medium",
         category: "sports"
     },
-    
+    {
+        question: "The famous 1974 boxing match between Muhammad Ali and George Foreman in Zaire is known by what name?",
+        correct_answer: "The Rumble in the Jungle",
+        incorrect_answers: ["The Thrilla in Manila", "The Fight of the Century", "The War at the Shore"],
+        difficulty: "hard",
+        category: "sports"
+    },
+    {
+        question: "Who holds the Major League Baseball record for the most consecutive games played?",
+        correct_answer: "Cal Ripken Jr.",
+        incorrect_answers: ["Lou Gehrig", "Babe Ruth", "Pete Rose"],
+        difficulty: "hard",
+        category: "sports"
+    },
+    {
+        question: "In what year was the back-pass rule, which prevents a goalkeeper from handling a deliberate pass from a teammate, introduced in soccer?",
+        correct_answer: "1992",
+        incorrect_answers: ["1986", "2000", "1978"],
+        difficulty: "hard",
+        category: "sports"
+    },
+    {
+        question: "In cricket, who was the first bowler to take all ten wickets in a single Test match innings?",
+        correct_answer: "Jim Laker",
+        incorrect_answers: ["Anil Kumble", "Shane Warne", "Muttiah Muralitharan"],
+        difficulty: "hard",
+        category: "sports"
+    },
+    {
+        question: "What term describes a tennis player winning all four Grand Slam tournaments plus the Olympic gold medal within the same calendar year?",
+        correct_answer: "The Golden Slam",
+        incorrect_answers: ["The Grand Slam", "The Career Slam", "The Super Slam"],
+        difficulty: "hard",
+        category: "sports"
+    },
+    {
+        question: "The 'Eau Rouge' and 'Raidillon' combination of corners is a famous sequence at which Formula 1 circuit?",
+        correct_answer: "Circuit de Spa-Francorchamps",
+        incorrect_answers: ["Monza", "Silverstone", "Monaco"],
+        difficulty: "hard",
+        category: "sports"
+    },
+    {
+        question: "In basketball, how long does a team have to advance the ball past the half-court line in the NBA?",
+        correct_answer: "8 seconds",
+        incorrect_answers: ["10 seconds", "24 seconds", "5 seconds"],
+        difficulty: "hard",
+        category: "sports"
+    },
+    {
+        question: "In the history of golf, what was a 'stymie'?",
+        correct_answer: "A situation where an opponent's ball blocked the path to the hole",
+        incorrect_answers: ["A type of golf club", "A name for the 19th hole", "A penalty for hitting into water"],
+        difficulty: "hard",
+        category: "sports"
+    },
+    {
+        question: "The ancient Olympic Games were held in honor of which Greek god?",
+        correct_answer: "Zeus",
+        incorrect_answers: ["Apollo", "Ares", "Poseidon"],
+        difficulty: "hard",
+        category: "sports"
+    },
+    {
+        question: "Which country won the first ever FIFA World Cup in 1930?",
+        correct_answer: "Uruguay",
+        incorrect_answers: ["Brazil", "Argentina", "Italy"],
+        difficulty: "hard",
+        category: "sports"
+    }
 
 ]
