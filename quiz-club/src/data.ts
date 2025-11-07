@@ -420,5 +420,76 @@ export const quizQuestions: Question[] = [
         incorrect_answers: ["3.14", "1.62", "2.17"],
         difficulty: "hard",
         category: "mathematics"
-    }
+    },
+    {
+        question: "Who was the first President of the United States?",
+        correct_answer: "George Washington",
+        incorrect_answers: ["Abraham Lincoln", "Thomas Jefferson", "John Adams"],
+        difficulty: "easy",
+        category: "history"
+    },
+    {
+        question: "In which country are the Great Pyramids of Giza located?",
+        correct_answer: "Egypt",
+        incorrect_answers: ["Greece", "Rome", "Mexico"],
+        difficulty: "easy",
+        category: "history"
+    },
+    {
+        question: "Which war was fought between the Axis and the Allied powers?",
+        correct_answer: "World War II",
+        incorrect_answers: ["World War I", "The Cold War", "The Vietnam War"],
+        difficulty: "easy",
+        category: "history"
+    },
+    {
+        question: "The ancient Roman Empire was centered in which modern-day country?",
+        correct_answer: "Italy",
+        incorrect_answers: ["Greece", "Turkey", "Spain"],
+        difficulty: "easy",
+        category: "history"
+    },
+    {
+        question: "Who was the famous queen of ancient Egypt known for her relationship with Mark Antony?",
+        correct_answer: "Cleopatra",
+        incorrect_answers: ["Nefertiti", "Hatshepsut", "Queen Victoria"],
+        difficulty: "easy",
+        category: "history"
+    },
+    {
+        question: "The Renaissance, a period of great cultural change and artistic achievement, began in which country?",
+        correct_answer: "Italy",
+        incorrect_answers: ["France", "England", "Germany"],
+        difficulty: "easy",
+        category: "history"
+    },
+    {
+        question: "What ship did the Pilgrims use to travel to North America in 1620?",
+        correct_answer: "The Mayflower",
+        incorrect_answers: ["The Santa Maria", "The Titanic", "The Discovery"],
+        difficulty: "easy",
+        category: "history"
+    },
+    {
+        question: "The Great Wall is a famous landmark in which country?",
+        correct_answer: "China",
+        incorrect_answers: ["Japan", "India", "Mongolia"],
+        difficulty: "easy",
+        category: "history"
+    },
+    {
+        question: "Who is credited with discovering America in 1492?",
+        correct_answer: "Christopher Columbus",
+        incorrect_answers: ["Leif Erikson", "Ferdinand Magellan", "Marco Polo"],
+        difficulty: "easy",
+        category: "history"
+    },
+    {
+        question: "Which US President is known for the Emancipation Proclamation?",
+        correct_answer: "Abraham Lincoln",
+        incorrect_answers: ["George Washington", "Theodore Roosevelt", "Andrew Jackson"],
+        difficulty: "easy",
+        category: "history"
+    },
+    
 ]
