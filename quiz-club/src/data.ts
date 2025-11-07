@@ -140,5 +140,75 @@ export const quizQuestions: Question[] = [
         incorrect_answers: ["Software that is always free", "Software without a user interface", "Software that runs on any OS"],
         difficulty: "medium",
         category: "computer_science"
+    },
+    {
+        question: "In the OSI model of networking, at which layer does a router primarily operate?",
+        correct_answer: "Layer 3 (Network)",
+        incorrect_answers: ["Layer 2 (Data Link)", "Layer 4 (Transport)", "Layer 7 (Application)"],
+        difficulty: "hard",
+        category: "computer_science"
+    },
+    {
+        question: "What is the term for a situation in virtual memory systems where excessive paging leads to a severe drop in performance?",
+        correct_answer: "Thrashing",
+        incorrect_answers: ["Faulting", "Swapping", "Fragmenting"],
+        difficulty: "hard",
+        category: "computer_science"
+    },
+    {
+        question: "Which of the following is an example of an asymmetric encryption algorithm?",
+        correct_answer: "RSA",
+        incorrect_answers: ["AES", "DES", "Blowfish"],
+        difficulty: "hard",
+        category: "computer_science"
+    },
+    {
+        question: "In a Unix-like filesystem, what data structure stores metadata about a file, such as its owner, permissions, and location on the disk?",
+        correct_answer: "Inode",
+        incorrect_answers: ["Superblock", "FAT", "Master File Table"],
+        difficulty: "hard",
+        category: "computer_science"
+    },
+    {
+        question: "What is the main purpose of a CPU's Translation Lookaside Buffer (TLB)?",
+        correct_answer: "To speed up virtual-to-physical address translation",
+        incorrect_answers: ["To execute out-of-order instructions", "To predict branch outcomes", "To store pre-fetched data from RAM"],
+        difficulty: "hard",
+        category: "computer_science"
+    },
+    {
+        question: "In RAID configurations, which level combines mirroring and striping and requires at least four disks?",
+        correct_answer: "RAID 10 (1+0)",
+        incorrect_answers: ["RAID 5", "RAID 6", "RAID 1"],
+        difficulty: "hard",
+        category: "computer_science"
+    },
+    {
+        question: "Which process scheduling algorithm can suffer from the 'convoy effect', where short processes are stuck waiting behind long ones?",
+        correct_answer: "First-Come, First-Served (FCFS)",
+        incorrect_answers: ["Shortest Job First (SJF)", "Round Robin", "Priority Scheduling"],
+        difficulty: "hard",
+        category: "computer_science"
+    },
+    {
+        question: "What type of cybersecurity attack involves injecting malicious scripts into a trusted website, which are then executed by the victim's browser?",
+        correct_answer: "Cross-Site Scripting (XSS)",
+        incorrect_answers: ["SQL Injection", "Man-in-the-Middle (MITM)", "Denial-of-Service (DoS)"],
+        difficulty: "hard",
+        category: "computer_science"
+    },
+    {
+        question: "What is the primary difference between a mutex and a binary semaphore?",
+        correct_answer: "Ownership: A mutex can only be unlocked by the thread that locked it.",
+        incorrect_answers: ["Semaphores are faster than mutexes.", "Mutexes are used for file access only.", "A semaphore cannot be used for mutual exclusion."],
+        difficulty: "hard",
+        category: "computer_science"
+    },
+    {
+        question: "In computer architecture, what is 'endianness'?",
+        correct_answer: "The order of bytes in a multi-byte word in memory",
+        incorrect_answers: ["The number of bits a CPU can process at once", "The method for error correction in RAM", "The physical layout of transistors on a chip"],
+        difficulty: "hard",
+        category: "computer_science"
     }
 ]
