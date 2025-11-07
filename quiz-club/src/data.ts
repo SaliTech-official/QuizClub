@@ -281,5 +281,144 @@ export const quizQuestions: Question[] = [
         difficulty: "easy",
         category: "mathematics"
     },
-    
+    {
+        question: "In a right-angled triangle with legs of length 3 and 4, what is the length of the hypotenuse?",
+        correct_answer: "5",
+        incorrect_answers: ["6", "7", "12"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "What is the result of (x + 2)(x + 3)?",
+        correct_answer: "x^2 + 5x + 6",
+        incorrect_answers: ["x^2 + 6", "x^2 + 5x + 5", "2x + 5"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "What is the area of a circle with a radius of 5? (in terms of pi)",
+        correct_answer: "25π",
+        incorrect_answers: ["10π", "5π", "50π"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "What is the slope of the line given by the equation y = 3x - 2?",
+        correct_answer: "3",
+        incorrect_answers: ["-2", "1", "x"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "What is the value of 2 to the power of 5?",
+        correct_answer: "32",
+        incorrect_answers: ["10", "16", "25"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "What is log base 10 of 100?",
+        correct_answer: "2",
+        incorrect_answers: ["10", "1", "100"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "What is the average (mean) of the numbers 2, 4, 6, and 8?",
+        correct_answer: "5",
+        incorrect_answers: ["4", "6", "20"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "Following the order of operations (PEMDAS/BODMAS), what is 5 + 3 * 2?",
+        correct_answer: "11",
+        incorrect_answers: ["16", "13", "10"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "What is the probability of rolling an even number on a standard six-sided die?",
+        correct_answer: "1/2",
+        incorrect_answers: ["1/3", "1/6", "2/3"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "If x + y = 10 and x - y = 4, what is the value of x?",
+        correct_answer: "7",
+        incorrect_answers: ["3", "6", "14"],
+        difficulty: "medium",
+        category: "mathematics"
+    },
+    {
+        question: "What is the derivative of x^3 with respect to x?",
+        correct_answer: "3x^2",
+        incorrect_answers: ["x^4 / 4", "3x", "x^3"],
+        difficulty: "hard",
+        category: "mathematics"
+    },
+    {
+        question: "What is the value of the imaginary unit 'i' squared (i^2)?",
+        correct_answer: "-1",
+        incorrect_answers: ["1", "i", "-i"],
+        difficulty: "hard",
+        category: "mathematics"
+    },
+    {
+        question: "What is the integral of 2x dx?",
+        correct_answer: "x^2 + C",
+        incorrect_answers: ["2x^2 + C", "2 + C", "x + C"],
+        difficulty: "hard",
+        category: "mathematics"
+    },
+    {
+        question: "What is the value of sin(π/2) in radians?",
+        correct_answer: "1",
+        incorrect_answers: ["0", "-1", "π/2"],
+        difficulty: "hard",
+        category: "mathematics"
+    },
+    {
+        question: "What is the determinant of the 2x2 matrix [[a, b], [c, d]]?",
+        correct_answer: "ad - bc",
+        incorrect_answers: ["ac - bd", "ab - cd", "a+d - (b+c)"],
+        difficulty: "hard",
+        category: "mathematics"
+    },
+    {
+        question: "What is the sum of the infinite geometric series 1 + 1/2 + 1/4 + 1/8 + ...?",
+        correct_answer: "2",
+        incorrect_answers: ["1.5", "Infinity", "1.75"],
+        difficulty: "hard",
+        category: "mathematics"
+    },
+    {
+        question: "What is the limit of (sin(x) / x) as x approaches 0?",
+        correct_answer: "1",
+        incorrect_answers: ["0", "Infinity", "Undefined"],
+        difficulty: "hard",
+        category: "mathematics"
+    },
+    {
+        question: "What is the derivative of e^x?",
+        correct_answer: "e^x",
+        incorrect_answers: ["xe^(x-1)", "0", "1"],
+        difficulty: "hard",
+        category: "mathematics"
+    },
+    {
+        question: "How many ways can you choose 2 items from a set of 5, without regard to order (5C2)?",
+        correct_answer: "10",
+        incorrect_answers: ["20", "25", "7"],
+        difficulty: "hard",
+        category: "mathematics"
+    },
+    {
+        question: "What is the value of Euler's number 'e' approximated to two decimal places?",
+        correct_answer: "2.72",
+        incorrect_answers: ["3.14", "1.62", "2.17"],
+        difficulty: "hard",
+        category: "mathematics"
+    }
 ]
