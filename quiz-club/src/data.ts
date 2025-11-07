@@ -491,5 +491,75 @@ export const quizQuestions: Question[] = [
         difficulty: "easy",
         category: "history"
     },
+    {
+        question: "The Battle of Hastings in 1066 was fought for the throne of which country?",
+        correct_answer: "England",
+        incorrect_answers: ["France", "Scotland", "Spain"],
+        difficulty: "medium",
+        category: "history"
+    },
+    {
+        question: "Who was the leader of the Soviet Union during World War II?",
+        correct_answer: "Joseph Stalin",
+        incorrect_answers: ["Vladimir Lenin", "Mikhail Gorbachev", "Nikita Khrushchev"],
+        difficulty: "medium",
+        category: "history"
+    },
+    {
+        question: "The Code of Hammurabi is an ancient set of laws from which civilization?",
+        correct_answer: "Babylonian",
+        incorrect_answers: ["Roman", "Greek", "Egyptian"],
+        difficulty: "medium",
+        category: "history"
+    },
+    {
+        question: "The Hundred Years' War was primarily fought between which two kingdoms?",
+        correct_answer: "England and France",
+        incorrect_answers: ["Spain and Portugal", "England and Scotland", "France and Germany"],
+        difficulty: "medium",
+        category: "history"
+    },
+    {
+        question: "What event in 1517 is considered the start of the Protestant Reformation?",
+        correct_answer: "Martin Luther posting his 95 Theses",
+        incorrect_answers: ["The signing of the Magna Carta", "The crowning of King Henry VIII", "The Council of Trent"],
+        difficulty: "medium",
+        category: "history"
+    },
+    {
+        question: "In which country did the Industrial Revolution begin?",
+        correct_answer: "Great Britain",
+        incorrect_answers: ["United States", "Germany", "France"],
+        difficulty: "medium",
+        category: "history"
+    },
+    {
+        question: "Who was the leader of the Mongol Empire at its height?",
+        correct_answer: "Genghis Khan",
+        incorrect_answers: ["Attila the Hun", "Kublai Khan", "Alexander the Great"],
+        difficulty: "medium",
+        category: "history"
+    },
+    {
+        question: "The ancient city of Carthage was the main rival to which empire?",
+        correct_answer: "The Roman Empire",
+        incorrect_answers: ["The Greek Empire", "The Persian Empire", "The Egyptian Empire"],
+        difficulty: "medium",
+        category: "history"
+    },
+    {
+        question: "Which Japanese city was the first to be attacked with an atomic bomb?",
+        correct_answer: "Hiroshima",
+        incorrect_answers: ["Tokyo", "Nagasaki", "Kyoto"],
+        difficulty: "medium",
+        category: "history"
+    },
+    {
+        question: "Apartheid was a system of racial segregation in which country?",
+        correct_answer: "South Africa",
+        incorrect_answers: ["India", "Australia", "Brazil"],
+        difficulty: "medium",
+        category: "history"
+    },
     
 ]
