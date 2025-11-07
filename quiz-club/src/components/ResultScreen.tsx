@@ -12,12 +12,12 @@ const ResultScreen: React.FC<Props> = ({ score, totalQuestions, playAgain, backT
 
   return (
     <div className="bg-white p-8 rounded-xl shadow-2xl text-center animate-fade-in">
-      <h2 className="text-3xl font-bold text-gray-800 mb-4">Quiz Finished!</h2>
-      <p className="text-xl text-gray-600 mb-2">
+      <h2 className="text-3xl font-bold text-gray-700 mb-4">Quiz Finished!</h2>
+      <p className="text-xl text-gray-700 mb-2">
         Your final score is:
-        <span className="font-bold text-green-500 text-2xl mx-2"> {score} / {totalQuestions}</span>
+        <span className="font-bold text-yellow-500 text-2xl mx-2"> {score} / {totalQuestions}</span>
       </p>
-      <p className="text-lg text-blue-500 font-semibold mb-8">
+      <p className="text-lg text-purple-600 font-semibold mb-8">
         ({percentage}%)
       </p>
       
@@ -30,7 +30,7 @@ const ResultScreen: React.FC<Props> = ({ score, totalQuestions, playAgain, backT
         </button>
         <button 
           onClick={playAgain} 
-          className="w-full sm:w-auto bg-green-500 text-white font-bold py-3 px-6 rounded-full hover:bg-green-600 transition-transform transform hover:scale-101"
+          className="w-full sm:w-auto bg-purple-600 text-white font-bold py-3 px-6 rounded-full hover:bg-purple-700 transition-transform transform hover:scale-101"
         >
           Play Again
         </button>

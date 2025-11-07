@@ -33,7 +33,7 @@ const SetupScreen: React.FC<Props> = ({
 
   return (
     <div className="bg-transparent p-0 w-full animate-fade-in">
-      <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Quiz Settings</h2>
+      <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">Quiz Settings</h2>
 
       <SettingsAccordion
         title="Category"
@@ -46,7 +46,7 @@ const SetupScreen: React.FC<Props> = ({
               setSelectedCategory(cat.value);
               close();
             }}
-            className="w-full text-left p-3 rounded-md hover:bg-blue-50 transition-colors"
+            className="w-full text-left p-3 rounded-md hover:bg-purple-50 transition-colors"
           >
             {cat.label}
           </button>
@@ -64,14 +64,14 @@ const SetupScreen: React.FC<Props> = ({
               setSelectedDifficulty(diff.value);
               close();
             }}
-            className="w-full text-left p-3 rounded-md hover:bg-blue-50 transition-colors"
+            className="w-full text-left p-3 rounded-md hover:bg-purple-50 transition-colors"
           >
             {diff.label}
           </button>
         ))}
       </SettingsAccordion>
 
-      <button onClick={startQuiz} className='w-full mt-6 bg-blue-500 text-white font-bold py-3 rounded-full hover:bg-blue-600 transition-transform transform hover:scale-101 shadow-lg'>
+      <button onClick={startQuiz} className='w-full mt-6 bg-purple-600 text-white font-bold py-3 rounded-full hover:bg-purple-700 transition-transform transform hover:scale-101 shadow-lg'>
         Start Quiz
       </button>
     </div>

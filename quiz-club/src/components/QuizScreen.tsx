@@ -26,11 +26,10 @@ const QuizScreen: React.FC<Props> = ({
   timeLeft,
   totalTime
 }) => {
-    const timeColor = timeLeft <= 5 ? "text-red-500" : "text-gray-800" ;
   return (
     <div className="w-full animate-fade-in">
       <div className="flex justify-between items-center mb-4">
-        <p className="text-xl font-bold text-gray-800">Score: {score}</p>
+        <p className="text-xl font-bold text-purple-600">Score: {score}</p>
         <p className="text-lg text-gray-500">
           Question: {questionNumber} / {totalQuestions}
         </p>

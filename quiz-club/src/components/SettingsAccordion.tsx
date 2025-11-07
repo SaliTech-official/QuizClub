@@ -18,8 +18,8 @@ const SettingsAccordion: React.FC<Props> = ({ title, selectedValue, children }) 
     <Disclosure as="div" className="w-full mb-4">
       {({ open, close }) => (
         <div className="rounded-lg shadow-md overflow-hidden">
-          <Disclosure.Button className="flex w-full justify-between items-center bg-white px-4 py-3 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75">
-            <span>{title}: <span className="font-bold text-blue-600">{selectedValue}</span></span>
+          <Disclosure.Button className="flex w-full justify-between items-center bg-white px-4 py-3 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-purple-600 focus-visible:ring-opacity-75">
+            <span>{title}: <span className="font-bold text-purple-600">{selectedValue}</span></span>
             <ChevronIcon
               className={`h-6 w-6 text-gray-500 transition-transform duration-300 ${
                 open ? 'rotate-180' : ''

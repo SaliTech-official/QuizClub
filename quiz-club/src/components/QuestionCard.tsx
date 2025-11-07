@@ -18,12 +18,12 @@ const QuestionCard: React.FC<Props> = ({ question, checkAnswer, userAnswer }) =>
           const isUserChoice = userAnswer === answer;
           const isCorrectAnswer = question.correct_answer === answer;
 
-          let buttonClass = 'bg-gray-100 hover:bg-blue-100';
+          let buttonClass = 'bg-gray-100 hover:bg-purple-100';
           if (hasAnswered) {
             if (isCorrectAnswer) {
-              buttonClass = 'bg-green-500 text-white';
+              buttonClass = 'bg-purple-600 text-white';
             } else if (isUserChoice) {
-              buttonClass = 'bg-red-500 text-white';
+              buttonClass = 'bg-purple-300 text-white';
             } else {
               buttonClass = 'bg-gray-200 text-gray-500';
             }
