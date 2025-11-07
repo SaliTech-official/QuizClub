@@ -631,5 +631,76 @@ export const quizQuestions: Question[] = [
         difficulty: "hard",
         category: "history"
     },
+    {
+        question: "What is the most prestigious international tournament in men's soccer (football)?",
+        correct_answer: "The FIFA World Cup",
+        incorrect_answers: ["The Olympics", "The Champions League", "Copa America"],
+        difficulty: "easy",
+        category: "sports"
+    },
+    {
+        question: "In the Olympic Games, what medal is awarded for first place?",
+        correct_answer: "Gold",
+        incorrect_answers: ["Silver", "Bronze", "Platinum"],
+        difficulty: "easy",
+        category: "sports"
+    },
+    {
+        question: "Which NBA team is most associated with Michael Jordan's iconic career?",
+        correct_answer: "Chicago Bulls",
+        incorrect_answers: ["Los Angeles Lakers", "Boston Celtics", "New York Knicks"],
+        difficulty: "easy",
+        category: "sports"
+    },
+    {
+        question: "In baseball, what is it called when a batter hits the ball out of the park and runs all four bases?",
+        correct_answer: "Home Run",
+        incorrect_answers: ["Strikeout", "Foul Ball", "Grand Slam"],
+        difficulty: "easy",
+        category: "sports"
+    },
+    {
+        question: "What is the name of the championship game in the National Football League (NFL)?",
+        correct_answer: "The Super Bowl",
+        incorrect_answers: ["The World Series", "The Stanley Cup", "The NBA Finals"],
+        difficulty: "easy",
+        category: "sports"
+    },
+    {
+        question: "In tennis, what score is represented by the term 'Love'?",
+        correct_answer: "Zero",
+        incorrect_answers: ["15", "30", "40"],
+        difficulty: "easy",
+        category: "sports"
+    },
+    {
+        question: "In golf, what is the term for completing a hole in one stroke under par?",
+        correct_answer: "Birdie",
+        incorrect_answers: ["Eagle", "Bogey", "Par"],
+        difficulty: "easy",
+        category: "sports"
+    },
+    {
+        question: "How many players are on a standard soccer team on the field at one time?",
+        correct_answer: "11",
+        incorrect_answers: ["9", "10", "12"],
+        difficulty: "easy",
+        category: "sports"
+    },
+    {
+        question: "In boxing, what does 'KO' stand for?",
+        correct_answer: "Knockout",
+        incorrect_answers: ["Kicked Out", "Keep On", "Knee Over"],
+        difficulty: "easy",
+        category: "sports"
+    },
+    {
+        question: "A long-distance running race of 42.195 kilometers (26.2 miles) is called what?",
+        correct_answer: "Marathon",
+        incorrect_answers: ["Sprint", "Decathlon", "Triathlon"],
+        difficulty: "easy",
+        category: "sports"
+    },
     
+
 ]
