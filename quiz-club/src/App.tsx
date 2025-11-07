@@ -9,8 +9,7 @@ type GameState = 'not_started' | 'playing' | 'finished';
 
 const shuffleArray = (array: string[]) => [...array].sort(() => Math.random() - 0.5);
 
-const QUESTION_TIME_LIMIT = 50; 
-const AUTO_NEXT_QUESTION_DELAY = 2000; 
+const QUESTION_TIME_LIMIT = 10;
 
 function App() {
   const [gameState, setGameState] = useState<GameState>('not_started');
@@ -30,9 +29,11 @@ function App() {
 
     const timer = setInterval(() => {
       setTimeLeft(prevTime => {
-        if (prevTime <= 1) {
+        if (prevTime <= 0) {
           clearInterval(timer);
-          handleTimeUp(); 
+
+          checkAnswer("---TIME_UP---"); 
+          
           return 0;
         }
         return prevTime - 1;
@@ -44,15 +45,6 @@ function App() {
     };
     
   }, [gameState, userAnswer, currentQuestionIndex]);
-
-
-  const handleTimeUp = () => {
-    checkAnswer(""); 
-
-    setTimeout(() => {
-      nextQuestion();
-    }, AUTO_NEXT_QUESTION_DELAY);
-  };
 
 
   const startQuiz = () => {
@@ -84,7 +76,7 @@ function App() {
     if (isCorrect) {
       setScore(prevScore => prevScore + 1);
     }
-    setUserAnswer(answer);
+    setUserAnswer(answer); 
   };
 
   const nextQuestion = () => {
