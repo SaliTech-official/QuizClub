@@ -23,11 +23,10 @@ To run Quiz Club locally, follow these steps:
    git clone https://github.com/SaliTech-official/QuizClub.git
 Navigate to the project directory:
 Bash
-
+```bash
 cd quiz-club
 Install dependencies:
 Bash
-
 npm install
 Start the development server:
 Bash
