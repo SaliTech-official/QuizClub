@@ -1,5 +1,7 @@
+// src/components/SetupScreen.tsx
 import React from 'react';
 import type { Difficulty, Category } from '../types';
+import SettingsAccordion from './SettingsAccordion';
 
 type Props = {
   startQuiz: () => void;
@@ -16,40 +18,61 @@ const SetupScreen: React.FC<Props> = ({
   selectedDifficulty,
   setSelectedDifficulty,
 }) => {
+  const categories: { value: Category; label: string }[] = [
+    { value: 'sports', label: 'Sports' },
+    { value: 'history', label: 'History' },
+    { value: 'computer_science', label: 'Computer Science' },
+  ];
+
+  const difficulties: { value: Difficulty; label: string }[] = [
+    { value: 'easy', label: 'Easy' },
+    { value: 'medium', label: 'Medium' },
+    { value: 'hard', label: 'Hard' },
+  ];
+
   return (
-    <div className="bg-white p-8 rounded-xl shadow-lg w-full text-left animate-fade-in">
-      <h2 className="text-2xl font-bold mb-6 text-center">Quiz Settings</h2>
+    <div className="bg-transparent p-0 w-full animate-fade-in">
+      <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Quiz Settings</h2>
 
-      <div className="mb-4">
-        <label htmlFor="category" className="block text-lg font-medium text-gray-700 mb-2">Category:</label>
-        <select
-          id="category"
-          value={selectedCategory}
-          onChange={(e) => setSelectedCategory(e.target.value as Category)}
-          className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-        >
-          <option value="sports">Sports</option>
-          <option value="history">History</option>
-          <option value="computer_science">Computer Science</option>
-          <option value="mathematics">Mathematics</option>
-        </select>
-      </div>
+      {/* آکاردئون برای انتخاب موضوع */}
+      <SettingsAccordion
+        title="Category"
+        selectedValue={categories.find(c => c.value === selectedCategory)?.label || ''}
+      >
+        {({ close }) => categories.map(cat => (
+          <button
+            key={cat.value}
+            onClick={() => {
+              setSelectedCategory(cat.value);
+              close(); // با انتخاب گزینه، آکاردئون بسته می‌شود
+            }}
+            className="w-full text-left p-3 rounded-md hover:bg-blue-50 transition-colors"
+          >
+            {cat.label}
+          </button>
+        ))}
+      </SettingsAccordion>
 
-      <div className="mb-8">
-        <label htmlFor="difficulty" className="block text-lg font-medium text-gray-700 mb-2">Difficulty:</label>
-        <select
-          id="difficulty"
-          value={selectedDifficulty}
-          onChange={(e) => setSelectedDifficulty(e.target.value as Difficulty)}
-          className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-        >
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>
-        </select>
-      </div>
+      {/* آکاردئون برای انتخاب درجه سختی */}
+      <SettingsAccordion
+        title="Difficulty"
+        selectedValue={difficulties.find(d => d.value === selectedDifficulty)?.label || ''}
+      >
+        {({ close }) => difficulties.map(diff => (
+          <button
+            key={diff.value}
+            onClick={() => {
+              setSelectedDifficulty(diff.value);
+              close();
+            }}
+            className="w-full text-left p-3 rounded-md hover:bg-blue-50 transition-colors"
+          >
+            {diff.label}
+          </button>
+        ))}
+      </SettingsAccordion>
 
-      <button onClick={startQuiz} className='w-full bg-blue-500 text-white font-bold py-3 rounded-full hover:bg-blue-600 transition-transform transform hover:scale-105'>
+      <button onClick={startQuiz} className='w-full mt-6 bg-blue-500 text-white font-bold py-3 rounded-full hover:bg-blue-600 transition-transform transform shadow-lg'>
         Start Quiz
       </button>
     </div>
