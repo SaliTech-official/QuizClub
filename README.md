@@ -21,17 +21,19 @@ To run Quiz Club locally, follow these steps:
 2. Clone the repository:
    ```bash
    git clone https://github.com/SaliTech-official/QuizClub.git
+   ```
 Navigate to the project directory:
-Bash
-```bash
-cd quiz-club
+   ```bash
+   cd quiz-club
+   ```
 Install dependencies:
-Bash
-npm install
+   ```bash
+   npm install
+   ```
 Start the development server:
-Bash
-
-npm run dev
+   ```bash
+   npm run dev
+   ```
 Open your browser and visit http://localhost:5173 (or the port shown in your terminal) to see the app in action.
 State Management
 The application's state is managed using React's built-in useState hook. This approach keeps the state management localized and straightforward, handling everything from the current game phase ('not_started', 'playing', 'finished') to the user's score, selected answers, and timer.
