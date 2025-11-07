@@ -701,6 +701,76 @@ export const quizQuestions: Question[] = [
         difficulty: "easy",
         category: "sports"
     },
+    {
+        question: "Which of the following is NOT one of the four Grand Slam tournaments in tennis?",
+        correct_answer: "The Davis Cup",
+        incorrect_answers: ["Wimbledon", "The French Open", "The US Open"],
+        difficulty: "medium",
+        category: "sports"
+    },
+    {
+        question: "What is the name of the prestigious annual multi-stage bicycle race primarily held in France?",
+        correct_answer: "Tour de France",
+        incorrect_answers: ["Giro d'Italia", "Vuelta a España", "Paris-Roubaix"],
+        difficulty: "medium",
+        category: "sports"
+    },
+    {
+        question: "In American football, how many points is a touchdown worth before the extra point attempt?",
+        correct_answer: "6",
+        incorrect_answers: ["7", "3", "2"],
+        difficulty: "medium",
+        category: "sports"
+    },
+    {
+        question: "In cricket, what is the term for a batsman being dismissed without scoring any runs?",
+        correct_answer: "A Duck",
+        incorrect_answers: ["A Goose", "A Strike", "A Blank"],
+        difficulty: "medium",
+        category: "sports"
+    },
+    {
+        question: "In ice hockey, when a team has a one-player advantage due to a penalty, what is this situation called?",
+        correct_answer: "Power Play",
+        incorrect_answers: ["Penalty Kill", "Short Handed", "Face Off"],
+        difficulty: "medium",
+        category: "sports"
+    },
+    {
+        question: "Which player holds the NBA record for the most points scored in a single game (100)?",
+        correct_answer: "Wilt Chamberlain",
+        incorrect_answers: ["Michael Jordan", "Kobe Bryant", "LeBron James"],
+        difficulty: "medium",
+        category: "sports"
+    },
+    {
+        question: "In soccer, what rule prevents attacking players from being behind the last defender when the ball is played to them?",
+        correct_answer: "The Offside Rule",
+        incorrect_answers: ["The Hand-ball Rule", "The Back-pass Rule", "The Advantage Rule"],
+        difficulty: "medium",
+        category: "sports"
+    },
+    {
+        question: "The winner of the Masters Tournament in golf is famously awarded what item of clothing?",
+        correct_answer: "A Green Jacket",
+        incorrect_answers: ["A Gold Medal", "A Silver Trophy", "A Plaid Hat"],
+        difficulty: "medium",
+        category: "sports"
+    },
+    {
+        question: "The Heptathlon in track and field consists of how many events?",
+        correct_answer: "7",
+        incorrect_answers: ["10", "5", "8"],
+        difficulty: "medium",
+        category: "sports"
+    },
+    {
+        question: "What is the name of the governing body for Formula 1 racing?",
+        correct_answer: "FIA (Fédération Internationale de l'Automobile)",
+        incorrect_answers: ["NASCAR", "IndyCar", "F1 Group"],
+        difficulty: "medium",
+        category: "sports"
+    },
     
 
 ]
