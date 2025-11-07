@@ -22,6 +22,7 @@ const SetupScreen: React.FC<Props> = ({
     { value: 'sports', label: 'Sports' },
     { value: 'history', label: 'History' },
     { value: 'computer_science', label: 'Computer Science' },
+    { value: 'mathematics', label: 'Mathematics' },
   ];
 
   const difficulties: { value: Difficulty; label: string }[] = [
@@ -34,7 +35,6 @@ const SetupScreen: React.FC<Props> = ({
     <div className="bg-transparent p-0 w-full animate-fade-in">
       <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Quiz Settings</h2>
 
-      {/* آکاردئون برای انتخاب موضوع */}
       <SettingsAccordion
         title="Category"
         selectedValue={categories.find(c => c.value === selectedCategory)?.label || ''}
@@ -44,7 +44,7 @@ const SetupScreen: React.FC<Props> = ({
             key={cat.value}
             onClick={() => {
               setSelectedCategory(cat.value);
-              close(); // با انتخاب گزینه، آکاردئون بسته می‌شود
+              close();
             }}
             className="w-full text-left p-3 rounded-md hover:bg-blue-50 transition-colors"
           >
@@ -53,7 +53,6 @@ const SetupScreen: React.FC<Props> = ({
         ))}
       </SettingsAccordion>
 
-      {/* آکاردئون برای انتخاب درجه سختی */}
       <SettingsAccordion
         title="Difficulty"
         selectedValue={difficulties.find(d => d.value === selectedDifficulty)?.label || ''}
@@ -72,7 +71,7 @@ const SetupScreen: React.FC<Props> = ({
         ))}
       </SettingsAccordion>
 
-      <button onClick={startQuiz} className='w-full mt-6 bg-blue-500 text-white font-bold py-3 rounded-full hover:bg-blue-600 transition-transform transform shadow-lg'>
+      <button onClick={startQuiz} className='w-full mt-6 bg-blue-500 text-white font-bold py-3 rounded-full hover:bg-blue-600 transition-transform transform hover:scale-101 shadow-lg'>
         Start Quiz
       </button>
     </div>

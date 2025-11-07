@@ -46,7 +46,7 @@ const QuizScreen: React.FC<Props> = ({
       />
 
       {userAnswer && (
-        <button onClick={nextQuestion} className="mt-8 bg-gray-700 text-white font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition-transform transform hover:scale-105 animate-fade-in">
+        <button onClick={nextQuestion} className="mt-8 bg-gray-700 text-white font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition-transform transform hover:scale-101 animate-fade-in">
           Next Question
         </button>
       )}

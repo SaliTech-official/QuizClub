@@ -24,13 +24,13 @@ const ResultScreen: React.FC<Props> = ({ score, totalQuestions, playAgain, backT
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <button 
           onClick={backToSetup} 
-          className="w-full sm:w-auto bg-gray-500 text-white font-bold py-3 px-6 rounded-full hover:bg-gray-600 transition-transform transform hover:scale-105"
+          className="w-full sm:w-auto bg-gray-500 text-white font-bold py-3 px-6 rounded-full hover:bg-gray-600 transition-transform transform hover:scale-101"
         >
           Back to Settings
         </button>
         <button 
           onClick={playAgain} 
-          className="w-full sm:w-auto bg-green-500 text-white font-bold py-3 px-6 rounded-full hover:bg-green-600 transition-transform transform hover:scale-105"
+          className="w-full sm:w-auto bg-green-500 text-white font-bold py-3 px-6 rounded-full hover:bg-green-600 transition-transform transform hover:scale-101"
         >
           Play Again
         </button>
