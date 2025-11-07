@@ -4,9 +4,10 @@ type Props = {
   score: number;
   totalQuestions: number;
   playAgain: () => void;
+  backToSetup: () => void;
 };
 
-const ResultScreen: React.FC<Props> = ({ score, totalQuestions, playAgain }) => {
+const ResultScreen: React.FC<Props> = ({ score, totalQuestions, playAgain, backToSetup }) => {
   const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
 
   return (
@@ -16,12 +17,24 @@ const ResultScreen: React.FC<Props> = ({ score, totalQuestions, playAgain }) => 
         Your final score is:
         <span className="font-bold text-green-500 text-2xl mx-2"> {score} / {totalQuestions}</span>
       </p>
-      <p className="text-lg text-blue-500 font-semibold mb-6">
+      <p className="text-lg text-blue-500 font-semibold mb-8">
         ({percentage}%)
       </p>
-      <button onClick={playAgain} className="bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition-transform transform hover:scale-105">
-        Play Again
-      </button>
+      
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <button 
+          onClick={backToSetup} 
+          className="w-full sm:w-auto bg-gray-500 text-white font-bold py-3 px-6 rounded-full hover:bg-gray-600 transition-transform transform hover:scale-105"
+        >
+          Back to Settings
+        </button>
+        <button 
+          onClick={playAgain} 
+          className="w-full sm:w-auto bg-green-500 text-white font-bold py-3 px-6 rounded-full hover:bg-green-600 transition-transform transform hover:scale-105"
+        >
+          Play Again
+        </button>
+      </div>
     </div>
   );
 };

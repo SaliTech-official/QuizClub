@@ -22,6 +22,10 @@ function App() {
   const [userAnswer, setUserAnswer] = useState<string | undefined>(undefined);
   const [timeLeft, setTimeLeft] = useState(QUESTION_TIME_LIMIT);
 
+  const backToSetup = () => {
+    setGameState('not_started');
+  };
+
   useEffect(() => {
     if (gameState !== 'playing' || userAnswer) {
       return;
@@ -124,6 +128,7 @@ function App() {
             score={score}
             totalQuestions={questions.length}
             playAgain={startQuiz} 
+            backToSetup={backToSetup}
           />
         )}
       </div>
