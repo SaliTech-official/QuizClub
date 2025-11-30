@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { quizQuestions } from './data';
 import SetupScreen from './components/SetupScreen';
 import QuizScreen from './components/QuizScreen';
